@@ -1,4 +1,4 @@
-Sample code and instructions on how to push the Raspberry Pi internal temperature value into respectively Prometheus, InfluxDB or Netdata.
+Sample code and instructions on how to push the Raspberry Pi internal temperature value into respectively Prometheus, InfluxDB or Netdata. No external libraries are used, just simple unix shell scripts.
 
 ## Prometheus
 
