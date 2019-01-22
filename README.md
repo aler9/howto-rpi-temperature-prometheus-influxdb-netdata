@@ -5,3 +5,13 @@ Sample code and instructions on how to push the Raspberry Pi internal temperatur
 ## InfluxDB
 
 ## Netdata
+
+Run this script at system startup. Ensure that the device /sys/class/thermal/thermal_zone0/temp is readable and the netdata port 8125 is accessible. No configuration of netdata is required. The value will appear in the "statsd" section.
+
+```bash
+#!/bin/sh
+while true; do
+    printf "rpi_temp:$(cat /sys/class/thermal/thermal_zone0/temp | sed 's/\([0-9]\{2\}\)/\1./')|g\n" | nc -u -w1 localhost 8125
+    sleep 30
+done
+```
