@@ -10,6 +10,7 @@ Save this script somewhere and launch it at system startup. Ensure that the devi
 
 ```bash
 #!/bin/sh
+
 while true; do
     printf "rpi_temp:$(cat /sys/class/thermal/thermal_zone0/temp | sed 's/\([0-9]\{2\}\)/\1./')|g\n" \
         | nc -u -w1 localhost 8125
