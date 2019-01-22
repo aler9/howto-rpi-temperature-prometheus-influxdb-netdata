@@ -6,7 +6,7 @@ Sample code and instructions on how to push the Raspberry Pi internal temperatur
 
 ## Netdata
 
-Save this script somewhere and launch it at system startup. Ensure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the netdata port 8125 is accessible. No configuration of netdata is required. The value will appear in the "statsd" section.
+Save this script somewhere and launch it at system startup. Ensure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the netdata port 8125 is accessible. No configuration of netdata is required. The value will appear in the "statsd" section. You can tune the resolution by replacing `30` with any amount of seconds.
 
 ```bash
 #!/bin/sh
