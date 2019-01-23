@@ -2,7 +2,7 @@ Sample code and instructions on how to push the Raspberry Pi internal temperatur
 
 ## Prometheus
 
-Save this script somewhere and launch it at system startup. Make sure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the port `7028` is accessible.
+Save this script somewhere and launch it at system startup. Make sure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the port `7028` is accessible by Prometheus.
 
 ```bash
 #!/bin/sh
