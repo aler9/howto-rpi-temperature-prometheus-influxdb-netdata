@@ -14,7 +14,7 @@ while true; do
 done
 ```
 
-Then add the following lines in the `scrape_configs` section of `prometheus.yml`. You can tune the resolution by replacing `30` with any amount of seconds.
+Then add the following lines in the `scrape_configs` section of `prometheus.yml`. The value will be saved in the `rpitemp` metric. You can tune the resolution by replacing `30` with any amount of seconds.
 
 ```yaml
 - job_name: rpitemp
