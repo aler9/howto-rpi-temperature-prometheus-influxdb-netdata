@@ -17,7 +17,7 @@ done
 Then add the following lines in the `scrape_configs` section of `prometheus.yml`. You can tune the resolution by replacing `30` with any amount of seconds.
 
 ```yaml
-- job_name: temp
+- job_name: rpitemp
   scrape_interval: 30s
   static_configs:
   - targets: ['localhost:7028']
