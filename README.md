@@ -2,7 +2,7 @@ Sample code and instructions on how to push the Raspberry Pi internal temperatur
 
 ## Prometheus
 
-Save this script somewhere and launch it at system startup. Ensure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the port `7028` is accessible.
+Save this script somewhere and launch it at system startup. Make sure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the port `7028` is accessible.
 
 ```bash
 #!/bin/sh
@@ -25,7 +25,7 @@ Then add the following lines in the `scrape_configs` section of `prometheus.yml`
 
 ## InfluxDB
 
-Save this script somewhere and launch it at system startup. Ensure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the influxDB port `8086` is accessible. No configuration of InfluxDB is required. The value will be saved in the `rpitemp` database. You can tune the resolution by replacing `30` with any amount of seconds.
+Save this script somewhere and launch it at system startup. Make sure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the influxDB port `8086` is accessible. No configuration of InfluxDB is required. The value will be saved in the `rpitemp` database. You can tune the resolution by replacing `30` with any amount of seconds.
 
 ```bash
 #!/bin/sh
@@ -44,7 +44,7 @@ done
 
 ## Netdata
 
-Save this script somewhere and launch it at system startup. Ensure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the netdata port `8125` is accessible. No configuration of netdata is required. The value will appear in the `statsd` section. You can tune the resolution by replacing `30` with any amount of seconds.
+Save this script somewhere and launch it at system startup. Make sure that the device `/sys/class/thermal/thermal_zone0/temp` is readable and that the netdata port `8125` is accessible. No configuration of netdata is required. The value will appear in the `statsd` section. You can tune the resolution by replacing `30` with any amount of seconds.
 
 ```bash
 #!/bin/sh
