@@ -9,7 +9,7 @@ Save this script somewhere and launch it at system startup: it creates a minimal
 
 while true; do
     nc -l -p 7028 -e sh -c '\
-        C="rpitemp $(cat /sys/class/thermal/thermal_zone0/temp | sed \"s/\([0-9]\{2\}\)/\1./\")"; \
+        C="rpitemp $(cat /sys/class/thermal/thermal_zone0/temp | sed "s/\([0-9]\{2\}\)/\1./")"; \
         printf "HTTP/1.0 200 OK\nContent-Length: ${#C}\n\n$C"'
 done
 ```
