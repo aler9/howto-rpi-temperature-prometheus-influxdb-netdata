@@ -20,7 +20,7 @@ Then add the following lines in the `scrape_configs` section of `prometheus.yml`
 - job_name: rpitemp
   scrape_interval: 30s
   static_configs:
-  - targets: ['localhost:7028']
+  - targets: ['127.0.0.1:7028']
 ```
 
 ## InfluxDB
