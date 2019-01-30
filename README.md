@@ -9,7 +9,7 @@ Prometheus and InfluxDB are two common time-series database used for storaging d
 * https://github.com/fgrosse/pi-temp
 * https://github.com/turmoni/temp-probe-exporter
 
-But since we're dealing with a computer with limited capabilities, and at the same time the quantity we're interested in is trivial to measure, it is possible to avoid the installation of an additional software and achieve the objective by using only shell scripts, with significant advantanges in terms of memory consumption and setup time.
+But since we're dealing with a computer with limited capabilities, and at the same time the quantity we're interested in is trivial to measure, it is possible to avoid the installation of additional softwares and achieve the objective by using only shell scripts, with significant advantanges in terms of memory consumption and setup time.
 
 ## Dependencies
 
