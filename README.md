@@ -1,6 +1,6 @@
 Sample code and instructions on how to push the Raspberry Pi internal temperature value into Prometheus, InfluxDB or Netdata. No external libraries are required, everything is performed through unix shell scripts.
 
-## Reasons
+## Introduction
 
 Performance monitoring refers to the measurement and storage of system parameters over a certain window of time. It is a mandatory practice when dealing with professional servers, and it is also spreading in the IoT world, as it allows a fast evaluation of a system reliability over time. The gathering is not limited to performance-related parameters and can be applied to a wide variety of fields: the same monitoring tools are often used to save measurements from weather stations, vehicles, stock markets. The Raspberry Pi is currently the most popular single board computer available, and it offers a ready-to-use temperature sensor that can be used to evaluate both CPU stress and weather conditions.
 
